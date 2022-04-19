@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src=https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -56,9 +56,118 @@
 
     </header>
 
-    <div class="body-content">
+    <div id="content">
+        <h2 class="neonText">
+            HIGHLIGHTS
+        </h2>
+
+        <div class="highlights">
+
+
+
+            <div class="hcard">
+
+            </div>
+            <div class="hcard">
+
+            </div>
+            <div class="hcard">
+
+            </div>
+        </div>
 
     </div>
+    <div id="schedule">
+        <h2 class="neonText">
+            EVENT SCHEDULE
+        </h2>
+
+        <div class="timeline">
+            <div class="container left">
+                <div class="date">15 Apr</div>
+
+                <div class="content">
+                    <h2>Registration Starts</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">20 Apr</div>
+
+                <div class="content">
+                    <h2>Registration ends</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">2 May</div>
+
+                <div class="content">
+                    <h2>Team Formulation Starts</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">3 May</div>
+
+                <div class="content">
+                    <h2>Ideation Round</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">5 May</div>
+
+                <div class="content">
+                    <h2>Ideation Round ends</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">06 May</div>
+
+                <div class="content">
+                    <h2>Hackathon Starts</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">8 May</div>
+
+                <div class="content">
+                    <h2>Hackathon ends</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">10 May</div>
+
+                <div class="content">
+                    <h2>Hackathon Round Results</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
 
 
@@ -78,6 +187,40 @@
             scaleMobile: 1.00,
             backgroundColor: 0x0,
             color: 0x341d7d
+        })
+
+
+
+        VANTA.NET({
+            el: "#content",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x77ff3f,
+            backgroundColor: 0x0,
+            points: 13.00,
+            maxDistance: 10.00,
+            spacing: 18.00
+        })
+
+        VANTA.NET({
+            el: "#schedule",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x77ff3f,
+            backgroundColor: 0x0,
+            points: 13.00,
+            maxDistance: 10.00,
+            spacing: 18.00
         })
     </script>
 
