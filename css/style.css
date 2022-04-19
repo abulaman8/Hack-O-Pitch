@@ -117,11 +117,14 @@ li span {
 
 .highlights {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     margin: 0px auto;
 }
 
-.hcard {
+
+/* .hcard {
     width: 250px;
     height: 300px;
     border-radius: 3px;
@@ -131,9 +134,8 @@ li span {
 }
 
 .hcard:hover {
-    /* border: 2px solid greenyellow; */
     box-shadow: 0 0 7px #fff, 0 0 10px yellowgreen, 0 0 21px yellowgreen, 0 0 42px, 0 0 84px yellowgreen;
-}
+} */
 
 .timeline {
     position: relative;
@@ -158,7 +160,7 @@ li span {
     padding: 15px 30px;
     position: relative;
     background: inherit;
-    width: 50%;
+    max-width: 50%;
 }
 
 .container.left {
@@ -169,7 +171,8 @@ li span {
     left: 50%;
 }
 
-.container::after {
+
+/* .container::after {
     content: '';
     position: absolute;
     width: 16px;
@@ -199,13 +202,13 @@ li span {
 
 .container.right::before {
     left: 8px;
-}
+} */
 
 .container .date {
     position: absolute;
     display: inline-block;
     top: calc(50% - 8px);
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     font-weight: bold;
     color: pink;
@@ -215,7 +218,7 @@ li span {
 }
 
 .container.left .date {
-    right: -75px;
+    right: -10px;
 }
 
 .container.right .date {
@@ -231,7 +234,7 @@ li span {
     top: calc(50% - 20px);
     background: #000;
     border-radius: 40px;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     color: pink;
     z-index: 1;
@@ -247,14 +250,16 @@ li span {
 
 .container .content {
     padding: 30px 90px 30px 30px;
-    background: #010a01;
+    background: transparent;
     position: relative;
     border-radius: 0 500px 500px 0;
+    text-align: right;
 }
 
 .container.right .content {
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
+    text-align: left;
 }
 
 .container .content h2 {
@@ -368,4 +373,50 @@ h2 {
     width: 75%;
     transition: max-height 0.2s ease-out;
     align-self: auto;
+}
+
+.card {
+    margin: 20px auto;
+    /* position: absolute; */
+    width: 290px;
+    height: 210px;
+    max-width: 100%;
+    transition: all 0.75s ease;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: rotateX(180deg);
+}
+
+.front,
+.back {
+    /* This part controls the flip */
+    backface-visibility: hidden;
+    /* Size and card position */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Appearance */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    box-shadow: 10px 10px 5px 0px rgba(2, 54, 22, 0.452);
+}
+
+.front {
+    background-color: #63d471;
+    background-image: radial-gradient(circle, #043716, #0f2c10, #132109, #101704, #080b00);
+    color: cyan;
+}
+
+.back {
+    transform: rotateX(180deg);
+    text-align: left;
+    background-color: darkslategray;
+    color: wheat;
 }
