@@ -6,42 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SCHEDULE</a>
+        <a href="#">SPONSORS</a>
+        <a href="#">FAQ</a>
+    </nav>
     <header id="halo">
-        <h1>
-            Annual Hackathon
-        </h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit odio sapiente consectetur voluptate, quis incidunt maiores aliquam dolores asperiores accusantium dicta explicabo at temporibus officiis commodi quasi quo odit!
-        </p>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae enim nisi, sequi quos officia aspernatur sunt illo. Quod libero quidem ab omnis magni vel recusandae facere nulla maiores, ex tempora.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequuntur at adipisci reiciendis placeat quia facere aspernatur sapiente quo libero! Veritatis, totam error corrupti harum cum voluptatum ad itaque non.
-        </p>
+        <!-- <h1 class="neonText">
+            Hack-0-Pitch
+        </h1> -->
+
+        <div class="content">
+            <div class="one">
+                <h1 class="neonText">
+                    Hack-0-Pitch
+                </h1>
+                <h2>
+                    Annual Hackathon
+                </h2>
+                <h3>2022</h3>
+                <h4>
+                    May 6th, 2022. Indian Institute of Technology Madras,
+                    <br> Chennai
+                </h4>
+            </div>
+            <div class="two">
+                <div id="countdown">
+                    <ul>
+                        <li class="neonText"><span id="days"></span>days</li>
+                        <li class="neonText"><span id="hours"></span>Hours</li>
+                        <li class="neonText"><span id="minutes"></span>Minutes</li>
+                        <li class="neonText"><span id="seconds"></span>Seconds</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
 
     </header>
+
+    <div class="body-content">
+
+    </div>
+
+
 
 
 
 
 
     <script>
-        VANTA.HALO({
+        VANTA.RINGS({
             el: "#halo",
             mouseControls: true,
             touchControls: true,
-            gyroControls: false,
+            gyroControls: true,
             minHeight: 200.00,
-            minWidth: 200.00
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0,
+            color: 0x341d7d
         })
     </script>
+
+
 </body>
 
 </html>

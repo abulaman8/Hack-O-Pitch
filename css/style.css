@@ -3,6 +3,101 @@ header {
     color: white;
 }
 
-p {
-    margin: 2em 2em 2em 2em;
+.content {
+    display: flex;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+body {
+    font-size: 18px;
+    font-family: Roboticbody;
+    background-color: #010a01;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h1 {
+    font-family: Robotic;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 40px;
+}
+
+@font-face {
+    font-family: Robotic;
+    src: url(font/Robtronika-4Bq8p.ttf);
+}
+
+@font-face {
+    font-family: Roboticbody;
+    src: url(font/sf-transrobotics.regular.ttf);
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Robotic;
+    text-shadow: 0 0 7px green;
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.one {
+    max-width: 50%;
+    margin-right: 17px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.two {
+    margin-left: 17px;
+    margin-top: 10%;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* -----------------------------------TIMER------------------------------------- */
+
+li {
+    display: inline-block;
+    font-size: 0.85em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 2rem;
+}
+
+.countdown {
+    position: absolute;
+    bottom: 40%;
+}
+
+@media all and (max-width: 768px) {
+    li {
+        font-size: 1.125rem;
+        padding: .35rem;
+    }
+    li span {
+        font-size: 1.375rem;
+    }
 }
