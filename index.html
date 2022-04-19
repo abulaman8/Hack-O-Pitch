@@ -27,19 +27,30 @@
             Hack-0-Pitch
         </h1> -->
 
-        <div class="content">
+        <div class="contents">
             <div class="one">
                 <h1 class="neonText">
                     Hack-0-Pitch
                 </h1>
+
+
+
+
                 <h2>
                     Annual Hackathon
                 </h2>
                 <h3>2022</h3>
+
+
+                <a href="#" class="btn">Go to Dashboard</a>
+
+
                 <h4>
                     May 6th, 2022. Indian Institute of Technology Madras,
                     <br> Chennai
                 </h4>
+
+
             </div>
             <div class="two">
                 <div id="countdown">
@@ -166,6 +177,25 @@
 
         </div>
     </div>
+    <div class="faq">
+        <h2 class="neonText">
+            FAQ
+        </h2>
+        <button class="accordion">Question 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Question 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Question 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
 
 
 
@@ -176,6 +206,21 @@
 
 
     <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
         VANTA.RINGS({
             el: "#halo",
             mouseControls: true,

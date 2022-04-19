@@ -3,8 +3,10 @@ header {
     color: white;
 }
 
-.content {
+.contents {
     display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
 }
 
 #content {
@@ -116,7 +118,7 @@ li span {
 .highlights {
     display: flex;
     align-items: center;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 .hcard {
@@ -305,4 +307,65 @@ li span {
         padding: 30px 30px 30px 90px;
         border-radius: 500px 0 0 500px;
     }
+}
+
+.btn {
+    text-decoration: none;
+    height: 2em;
+    max-width: 20rem;
+    background-color: white;
+    color: darkblue;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin: 25px auto;
+    margin-left: 30px;
+}
+
+h1,
+h2 {
+    margin-top: 0px;
+}
+
+.accordion {
+    font-family: Roboticbody;
+    color: cyan;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    border: 1px solid green;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: cyan;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    margin: 10px auto;
+    text-align: center;
+    padding: 0 18px;
+    background-color: black;
+    max-height: 0;
+    overflow: hidden;
+    width: 75%;
+    transition: max-height 0.2s ease-out;
+    align-self: auto;
 }
