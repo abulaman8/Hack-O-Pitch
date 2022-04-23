@@ -1,3 +1,20 @@
+@keyframes flicker-1 {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 70px #ed1996ff, 0 0 80px #ed1996ff, 0 0 90px #ed1996ff;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
 header {
     width: 100%;
     color: white;
@@ -15,7 +32,7 @@ header {
 
 .neonText {
     color: #fff;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+    animation: flicker-1 1.5s infinite alternate;
 }
 
 body {
@@ -205,11 +222,14 @@ li span {
 } */
 
 .container .date {
+    font-weight: bold;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     position: absolute;
     display: inline-block;
     top: calc(50% - 8px);
     text-align: left;
-    font-size: 14px;
+    font-size: 1.25em;
     font-weight: bold;
     color: pink;
     text-transform: uppercase;
@@ -219,10 +239,12 @@ li span {
 
 .container.left .date {
     right: -10px;
+    margin-right: -55px;
 }
 
 .container.right .date {
     left: -75px;
+    margin-left: -55px;
 }
 
 .container .icon {
@@ -419,4 +441,15 @@ h2 {
     text-align: left;
     background-color: darkslategray;
     color: wheat;
+}
+
+.front p {
+    font-size: 0.8em;
+    margin: 8px auto;
+}
+
+.front img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
 }
