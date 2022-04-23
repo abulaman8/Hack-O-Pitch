@@ -91,10 +91,11 @@ nav a {
 }
 
 .one {
-    max-width: 50%;
+    max-width: 100%;
     margin-right: 17px;
     text-align: left;
     letter-spacing: 1px;
+    display: inline-block;
 }
 
 .two {
@@ -315,7 +316,7 @@ li span {
     }
     .container.left::after,
     .container.right::after {
-        left: 82px;
+        left: 250px;
     }
     .container.left::before,
     .container.right::before {
@@ -324,10 +325,11 @@ li span {
     }
     .container.left .date,
     .container.right .date {
-        font-size: 0.9em;
-        margin-left: -15px;
+        font-size: 0.8em;
+        margin-left: 0px;
         right: auto;
         left: 15px;
+        text-overflow: clip;
     }
     .container.left .icon,
     .container.right .icon {
@@ -479,3 +481,12 @@ h2 {
     position: fixed;
     top: 0%;
 } */
+
+.highlights .img {
+    width: 250px;
+    height: 100px;
+    display: inline-flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
