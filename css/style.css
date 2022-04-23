@@ -242,12 +242,12 @@ li span {
 
 .container.left .date {
     right: -10px;
-    margin-right: -55px;
+    margin-right: -190px;
 }
 
 .container.right .date {
     left: -75px;
-    margin-left: -55px;
+    margin-left: -190px;
 }
 
 .container .icon {
