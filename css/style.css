@@ -144,205 +144,6 @@ li span {
     margin: 0px auto;
 }
 
-
-/* .hcard {
-    width: 250px;
-    height: 300px;
-    border-radius: 3px;
-    background-color: brown;
-    margin: 20px auto;
-    box-shadow: none;
-}
-
-.hcard:hover {
-    box-shadow: 0 0 7px #fff, 0 0 10px yellowgreen, 0 0 21px yellowgreen, 0 0 42px, 0 0 84px yellowgreen;
-} */
-
-.timeline {
-    position: relative;
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 15px 0;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: pink;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
-}
-
-.container {
-    padding: 15px 30px;
-    position: relative;
-    background: inherit;
-    max-width: 50%;
-}
-
-.container.left {
-    left: 0;
-}
-
-.container.right {
-    left: 50%;
-}
-
-
-/* .container::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: calc(50% - 8px);
-    right: -8px;
-    background: #ffffff;
-    border: 2px solid pink;
-    border-radius: 16px;
-    z-index: 1;
-}
-
-.container.right::after {
-    left: -8px;
-}
-
-.container::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 2px;
-    top: calc(50% - 1px);
-    right: 8px;
-    background: pink;
-    z-index: 1;
-}
-
-.container.right::before {
-    left: 8px;
-} */
-
-.container .date {
-    font-weight: bold;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    position: absolute;
-    display: inline-block;
-    top: calc(50% - 8px);
-    text-align: left;
-    font-size: 1.25em;
-    font-weight: bold;
-    color: pink;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 1;
-}
-
-.container.left .date {
-    right: -10px;
-    margin-right: -190px;
-}
-
-.container.right .date {
-    left: -75px;
-    margin-left: -190px;
-}
-
-.container .icon {
-    position: absolute;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    padding: 9px 0;
-    top: calc(50% - 20px);
-    background: #000;
-    border-radius: 40px;
-    text-align: left;
-    font-size: 18px;
-    color: pink;
-    z-index: 1;
-}
-
-.container.left .icon {
-    right: 56px;
-}
-
-.container.right .icon {
-    left: 56px;
-}
-
-.container .content {
-    padding: 30px 90px 30px 30px;
-    background: transparent;
-    position: relative;
-    border-radius: 0 500px 500px 0;
-    text-align: right;
-}
-
-.container.right .content {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
-    text-align: left;
-}
-
-.container .content h2 {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-    font-weight: normal;
-    color: pink;
-}
-
-.container .content p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 22px;
-    color: #fff;
-}
-
-@media (max-width: 767.98px) {
-    .timeline::after {
-        left: 90px;
-    }
-    .container {
-        width: 100%;
-        padding-left: 120px;
-        padding-right: 30px;
-    }
-    .container.right {
-        left: 0%;
-    }
-    .container.left::after,
-    .container.right::after {
-        left: 250px;
-    }
-    .container.left::before,
-    .container.right::before {
-        left: 100px;
-        border-color: transparent pink transparent transparent;
-    }
-    .container.left .date,
-    .container.right .date {
-        font-size: 0.8em;
-        margin-left: 0px;
-        right: auto;
-        left: 15px;
-        text-overflow: clip;
-    }
-    .container.left .icon,
-    .container.right .icon {
-        right: auto;
-        left: 146px;
-    }
-    .container.left .content,
-    .container.right .content {
-        padding: 30px 30px 30px 90px;
-        border-radius: 500px 0 0 500px;
-    }
-}
-
 .btn {
     text-decoration: none;
     height: 2em;
@@ -405,7 +206,9 @@ h2 {
 }
 
 .card {
-    margin: 20px auto;
+    margin: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
     /* position: absolute; */
     width: 290px;
     height: 210px;
@@ -489,4 +292,15 @@ h2 {
     margin-right: 30px;
     margin-left: 30px;
     margin-top: 40px;
+}
+
+.home_icon {
+    height: 75px;
+    width: 160px;
+}
+
+.logo {
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
 }
