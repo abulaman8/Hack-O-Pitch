@@ -1,5 +1,4 @@
 @keyframes flicker-1 {
-
     0%,
     18%,
     22%,
@@ -9,7 +8,6 @@
     100% {
         text-shadow: 0 0 4px #fff, 0 0 70px #ed1996ff, 0 0 80px #ed1996ff, 0 0 90px #ed1996ff;
     }
-
     20%,
     24%,
     55% {
@@ -137,24 +135,20 @@ li span {
         font-size: 1.125rem;
         padding: .35rem;
     }
-
     li span {
         font-size: 1.375rem;
     }
-
     #hackopitch-text {
         margin-left: 32px;
         width: 90%;
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
     #footer {
         text-align: left;
         margin-left: 12px;
         font-size: 1em;
     }
-
 }
 
 .highlights {
@@ -376,4 +370,51 @@ footer h3 {
     font-size: 1.6em;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
+}
+
+.profile-card {
+    max-width: 200px;
+    max-height: 360px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 15px;
+    /* background-color: #031826; */
+    background-color: transparent;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-card:hover {
+    box-shadow: 0 10px 25px teal;
+    background-color: #031826;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.org {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-icons img {
+    height: 21px;
+    width: 21px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 0%;
 }
