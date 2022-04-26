@@ -45,7 +45,8 @@ header {
 body {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
-    background-color: #010a01;
+    /* background-color: #010a01; */
+    background-color: black;
     text-align: center;
     font-weight: lighter;
     color: white;
@@ -384,6 +385,7 @@ footer h3 {
     margin-left: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .profile-card:hover {
