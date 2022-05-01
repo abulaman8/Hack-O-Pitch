@@ -20,15 +20,144 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
+    <style>
+        #navbar a{
+            color: white;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu-item:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        .menu-item a,
+        .logo {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .menu-btn {
+            display: none;
+            width: 35px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .bar {
+            height: 3px;
+            background-color: #333;
+            margin: 0.5rem 0;
+        }
+
+        .menu-btn::after,
+        .menu-btn::before {
+            content: '';
+            display: block;
+            height: 3px;
+            background-color: #333;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-list {
+            display: none;
+            border: 1px solid #ccc;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 4px;
+            padding: 0.75rem;
+            position: absolute;
+        }
+
+        .show-dropdown {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dropdown-list a:not(:first-child) {
+            margin-top: 0.5rem;
+        }
+
+        @media(max-width: 500px) {
+            .menu-btn {
+                display: block;
+            }
+
+            .main-nav {
+                flex-wrap: wrap;
+            }
+
+            .menu-list {
+                flex-basis: 100%;
+                flex-grow: 1;
+                flex-direction: column;
+            }
+
+            .menu-item {
+                margin-top: 0.5rem;
+            }
+
+            .nav-hidden {
+                display: none;
+            }
+
+            .dropdown-list {
+                border: none;
+                box-shadow: none;
+                padding: 0.75rem 0;
+                width: 100%;
+                margin-left: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <a href="/"><img class="home_icon" src="img/hackopitch_logo.png" alt="HOME" ALIGN=CENTER></a>
-        <a href="#schedule">SCHEDULE</a>
-        <a href="#sponsors">SPONSORS</a>
-        <a href="#faq">FAQS</a>
-        <a href="/ps.html">PROBLEM-STATEMENTS</a>
+    <nav id="navbar" class="main-nav">
+
+        <a href="/index.html" ><img width="120px" height="80px" src="img/hackopitch_logo.png" alt="HOME"
+            ALIGN=CENTER></a>
+
+        <button class="menu-btn">
+            <div class="bar"></div>
+        </button>
+
+        <ul class="menu-list nav-hidden">
+            <li class="menu-item">
+                <a href="/index.html#faq">FAQS</a>
+            </li>
+            <li class="menu-item">
+                <a href="/index.html#schedule">SCHEDULE</a>
+            </li>
+            <li class="menu-item">
+                <a href="/index.html#sponsors">SPONSORS</a>
+            </li>
+            <li class="menu-item">
+                <a href="/ps.html">PROBLEM STATEMENTS</a>
+            </li>
+            <li class="menu-item dropdown">
+                <a href="#" role="button"></a>
+            </li>
+        </ul>
     </nav>
 
     <div>
@@ -126,6 +255,7 @@
         </div>
         <br> <br>
     </footer>
+    <script src="./js/nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

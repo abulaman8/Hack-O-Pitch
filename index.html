@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <style>
+        #navbar a{
+            color: white;
+        }
         .main-nav {
             display: flex;
             justify-content: space-between;
@@ -55,6 +58,7 @@
             cursor: pointer;
             padding: 0;
         }
+
         .bar {
             height: 3px;
             background-color: #333;
@@ -68,24 +72,29 @@
             height: 3px;
             background-color: #333;
         }
+
         .dropdown {
             position: relative;
         }
+
         .dropdown-list {
             display: none;
             border: 1px solid #ccc;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             border-radius: 4px;
             padding: 0.75rem;
             position: absolute;
         }
+
         .show-dropdown {
             display: flex;
             flex-direction: column;
         }
+
         .dropdown-list a:not(:first-child) {
             margin-top: 0.5rem;
         }
+
         @media(max-width: 500px) {
             .menu-btn {
                 display: block;
@@ -108,6 +117,7 @@
             .nav-hidden {
                 display: none;
             }
+
             .dropdown-list {
                 border: none;
                 box-shadow: none;
@@ -121,45 +131,34 @@
 
 <body>
 
-    <nav class="main-nav">
-                
-        <a href="#" class="logo"><img class="logo" width='25px' height="20px" src="img/hackopitch_logo.png" alt="HOME" ALIGN=CENTER></a>
+    <nav id="navbar" class="main-nav">
+
+        <a href="/index.html" ><img width="120px" height="80px" src="img/hackopitch_logo.png" alt="HOME"
+                ALIGN=CENTER></a>
+
         <button class="menu-btn">
             <div class="bar"></div>
         </button>
+
         <ul class="menu-list nav-hidden">
             <li class="menu-item">
-                <a href="#">Schedule</a>
+                <a href="/index.html#faq">FAQS</a>
             </li>
             <li class="menu-item">
-                <a href="#">Sponsors</a>
+                <a href="/index.html#schedule">SCHEDULE</a>
             </li>
             <li class="menu-item">
-                <a href="#">FAQS</a>
+                <a href="/index.html#sponsors">SPONSORS</a>
             </li>
             <li class="menu-item">
-                <a href="#">Problem-Statements</a>
+                <a href="/ps.html">PROBLEM STATEMENTS</a>
             </li>
             <li class="menu-item dropdown">
-                <a href="#" role="button">Dropdown</a>
-                <div class="dropdown-list">
-                    <a href="#">Schedule</a>
-                    <a href="#">Sponsors</a>
-                    <a href="#">FAQS</a>
-                </div>
+                <a href="#" role="button"></a>
             </li>
         </ul>
     </nav>
-    <script src="./js/nav.js"></script>
-    
 
-    <!-- <nav>
-        <a href="/"><img class="home_icon" src="img/hackopitch_logo.png" alt="HOME" ALIGN=CENTER></a>
-        <a href="#schedule">SCHEDULE</a>
-        <a href="#sponsors">SPONSORS</a>
-        <a href="#faq">FAQS</a>
-        <a href="/ps.html">PROBLEM-STATEMENTS</a>
-    </nav> -->
     <header id="halo">
 
         <div class="contents">
@@ -193,7 +192,7 @@
     </header>
 
     <div class="prizes">
-    
+
         <h2 class="neonText">
             Prizes & Perks
         </h2>
@@ -494,6 +493,7 @@
             <br> <br>
         </footer>
 
+        <script src="./js/nav.js"></script>
         <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
         <script>
 
