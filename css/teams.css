@@ -1,0 +1,369 @@
+.container {
+    /* height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 100; */
+    /* min-height: 600px;
+    min-width: 1000px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover {
+    border: 1px solid #fff;
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.card0 {
+    background: url("../img/dummy_dp.png") center center no-repeat;
+    background-size: 300px;
+}
+
+.card0:hover {
+    background: url("../img/dummy_dp.png") left center no-repeat;
+    background-size: 600px;
+}
+
+.card0:hover h2 {
+    opacity: 1;
+}
+
+.card0:hover .fa {
+    opacity: 1;
+}
+
+.card1 {
+    background: url("../img/dummy_dp.png") center center no-repeat;
+    background-size: 300px;
+}
+
+.card1:hover {
+    background: url("../img/dummy_dp.png") left center no-repeat;
+    background-size: 600px;
+}
+
+.card1:hover h2 {
+    opacity: 1;
+}
+
+.card1:hover .fa {
+    opacity: 1;
+}
+
+.card2 {
+    background: url("../img/dummy_dp.png") center center no-repeat;
+    background-size: 300px;
+}
+
+.card2:hover {
+    background: url("../img/dummy_dp.png") left center no-repeat;
+    background-size: 600px;
+}
+
+.card2:hover h2 {
+    opacity: 1;
+}
+
+.card2:hover .fa {
+    opacity: 1;
+}
+
+h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fa {
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: turquoise;
+}
+
+.icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 220px;
+    width: 50px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-card {
+    max-width: 200px;
+    max-height: 360px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 15px;
+    /* background-color: #031826; */
+    background-color: transparent;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.profile-card:hover {
+    box-shadow: 0 10px 25px teal;
+    background-color: #031826;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+
+/* .profile-card img:hover {
+    height: 150px;
+    width: 150px;
+} */
+
+.org {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-icons img {
+    height: 21px;
+    width: 21px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 0%;
+}
+
+.profile-icons img:hover {
+    height: 27px;
+    width: 27px;
+    padding: 8px;
+}
+
+hr {
+    color: darkgrey;
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: left;
+    margin-left: 100px;
+    font-size: 1em;
+}
+
+footer p {
+    font-family: sans-serif;
+}
+
+footer a img {
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+
+.small-icons {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+footer h3 {
+    margin-left: 15px;
+}
+
+.contact {
+    display: flex;
+}
+
+.copyright {
+    text-align: center;
+    justify-content: center;
+    color: gray;
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    font-family: Robotic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 40px;
+    color: white;
+}
+
+@font-face {
+    font-family: Robotic;
+    src: url(font/Robtronika-4Bq8p.ttf);
+}
+
+@font-face {
+    font-family: Roboticbody;
+    src: url(font/good_times.ttf);
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Robotic;
+    text-shadow: 0 0 7px green;
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.one {
+    max-width: 100%;
+    margin-right: 17px;
+    text-align: left;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.two {
+    margin-left: 17px;
+    margin-top: 10%;
+    align-items: center;
+    height: 100%;
+}
+
+@keyframes flicker-1 {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 70px #ed1996ff, 0 0 80px #ed1996ff, 0 0 90px #ed1996ff;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+#hackopitch-text {
+    margin-left: 22px;
+}
+
+header {
+    width: 100%;
+    color: white;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+#content {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.neonText {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #fff;
+    animation: flicker-1 1.5s infinite alternate;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    /* background-color: #010a01; */
+    background-color: black;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+}
+
+.home_icon {
+    height: 75px;
+    width: 160px;
+}
+
+.logo {
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+}

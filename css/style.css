@@ -1,5 +1,4 @@
 @keyframes flicker-1 {
-
     0%,
     18%,
     22%,
@@ -9,7 +8,6 @@
     100% {
         text-shadow: 0 0 4px #fff, 0 0 70px #ed1996ff, 0 0 80px #ed1996ff, 0 0 90px #ed1996ff;
     }
-
     20%,
     24%,
     55% {
@@ -47,7 +45,8 @@ header {
 body {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
-    background-color: #010a01;
+    /* background-color: #010a01; */
+    background-color: black;
     text-align: center;
     font-weight: lighter;
     color: white;
@@ -137,24 +136,20 @@ li span {
         font-size: 1.125rem;
         padding: .35rem;
     }
-
     li span {
         font-size: 1.375rem;
     }
-
     #hackopitch-text {
         margin-left: 32px;
         width: 90%;
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
     #footer {
         text-align: left;
         margin-left: 12px;
         font-size: 1em;
     }
-
 }
 
 .highlights {
