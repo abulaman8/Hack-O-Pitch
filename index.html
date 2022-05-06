@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hack-O-Pitch | IITM Paradox'22 | Hackathon + B-Plan Competition</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src=https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js></script>
@@ -21,37 +20,38 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <style>
-        #navbar a{
+        #navbar a {
             color: white;
         }
+        
         .main-nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
         }
-
+        
         .menu-list {
             list-style-type: none;
             padding: 0;
             margin: 0;
             display: flex;
         }
-
+        
         .menu-item:not(:last-child) {
             margin-right: 1rem;
         }
-
+        
         .menu-item a,
         .logo {
             text-decoration: none;
             color: #333;
         }
-
+        
         .logo {
             font-size: 1.5rem;
         }
-
+        
         .menu-btn {
             display: none;
             width: 35px;
@@ -60,13 +60,13 @@
             cursor: pointer;
             padding: 0;
         }
-
+        
         .bar {
             height: 3px;
             background-color: #333;
             margin: 0.5rem 0;
         }
-
+        
         .menu-btn::after,
         .menu-btn::before {
             content: '';
@@ -74,11 +74,11 @@
             height: 3px;
             background-color: #333;
         }
-
+        
         .dropdown {
             position: relative;
         }
-
+        
         .dropdown-list {
             display: none;
             border: 1px solid #ccc;
@@ -87,39 +87,34 @@
             padding: 0.75rem;
             position: absolute;
         }
-
+        
         .show-dropdown {
             display: flex;
             flex-direction: column;
         }
-
+        
         .dropdown-list a:not(:first-child) {
             margin-top: 0.5rem;
         }
-
+        
         @media(max-width: 500px) {
             .menu-btn {
                 display: block;
             }
-
             .main-nav {
                 flex-wrap: wrap;
             }
-
             .menu-list {
                 flex-basis: 100%;
                 flex-grow: 1;
                 flex-direction: column;
             }
-
             .menu-item {
                 margin-top: 0.5rem;
             }
-
             .nav-hidden {
                 display: none;
             }
-
             .dropdown-list {
                 border: none;
                 box-shadow: none;
@@ -136,8 +131,7 @@
 
     <nav id="navbar" class="main-nav">
 
-        <a href="/index.html" ><img width="120px" height="80px" src="img/hackopitch_logo.png" alt="HOME"
-                ALIGN=CENTER></a>
+        <a href="index.html"><img width="120px" height="80px" src="img/hackopitch_logo.png" alt="HOME" ALIGN=CENTER></a>
 
         <button class="menu-btn">
             <div class="bar"></div>
@@ -145,16 +139,16 @@
 
         <ul class="menu-list nav-hidden">
             <li class="menu-item">
-                <a href="/index.html#faq">FAQS</a>
+                <a href="index.html#faq">FAQS</a>
             </li>
             <li class="menu-item">
-                <a href="/index.html#schedule">SCHEDULE</a>
+                <a href="index.html#schedule">SCHEDULE</a>
             </li>
             <li class="menu-item">
-                <a href="/index.html#sponsors">SPONSORS</a>
+                <a href="index.html#sponsors">SPONSORS</a>
             </li>
             <li class="menu-item">
-                <a href="/ps.html">PROBLEM STATEMENTS</a>
+                <a href="ps.html">PROBLEM STATEMENTS</a>
             </li>
             <li class="menu-item dropdown">
                 <a href="#" role="button"></a>
@@ -186,8 +180,7 @@
 
                 <div style="margin-left: 40px; color: #f70f0f;">
                     <span>Only <b>IITM BSC Degree</b> Email Ids <br> are allowed for Registration.</span><br><br>
-                    <div class="apply-button" data-hackathon-slug="hackopitch-iitm" data-button-theme="dark-inverted"
-                        style="height: 44px; width: 312px"></div>
+                    <div class="apply-button" data-hackathon-slug="hackopitch-iitm" data-button-theme="dark-inverted" style="height: 44px; width: 312px"></div>
                 </div>
 
                 <br><br>
@@ -270,8 +263,7 @@
                         <p>HEALTH, FITNESS & SPORTS</p>
                     </div>
                     <div class="back">
-                        Apps to improve,health,sports, hospital and administrative productivity, give new insight in
-                        medicine and treatment.
+                        Apps to improve,health,sports, hospital and administrative productivity, give new insight in medicine and treatment.
                     </div>
                 </div>
             </div>
@@ -293,8 +285,7 @@
                         <p>SMART AUTOMATION</p>
                     </div>
                     <div class="back">
-                        Smart automation in Daily life needs, Hybrid electric vehicles and Charging station detection
-                        etc.
+                        Smart automation in Daily life needs, Hybrid electric vehicles and Charging station detection etc.
                     </div>
                 </div>
             </div>
@@ -305,8 +296,7 @@
                         <p>SMART EDUCATION</p>
                     </div>
                     <div class="back">
-                        Smart education, a concept that describes learning in digital age. It enables learners to learn
-                        more effectively, efficiently, flexibly and comfortably.
+                        Smart education, a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.
                     </div>
                 </div>
             </div>
@@ -327,6 +317,76 @@
         </div>
         <br><br>
         <br><br>
+
+        <h2 class="neonText">JUDGES
+        </h2>
+        <div class="judges">
+            <div class="judge-card">
+                <img src="img/dummy_dp.png" alt="">
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt adipisci neque architecto doloribus.</p>
+                <div class="profile-icons">
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="judge-card">
+                <img src="img/dummy_dp.png" alt="">
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt adipisci neque architecto doloribus. </p>
+                <div class="profile-icons">
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="judge-card">
+                <img src="img/dummy_dp.png" alt="">
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt adipisci neque architecto doloribus</p>
+                <div class="profile-icons">
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <h2 class="neonText">MENTORS</h2>
+        <div class="mentors">
+
+            <div class="mentor-card">
+                <img src="img/dummy_dp.png" alt="">
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt adipisci neque architecto doloribus.</p>
+                <div class="profile-icons">
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="mentor-card">
+                <img src="img/dummy_dp.png" alt="">
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt adipisci neque architecto doloribus.</p>
+                <div class="profile-icons">
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="mentor-card">
+                <img src="img/dummy_dp.png" alt="">
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt adipisci neque architecto doloribus.</p>
+                <div class="profile-icons">
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="mentor-card">
+                <img src="img/dummy_dp.png" alt="">
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt adipisci neque architecto doloribus.</p>
+                <div class="profile-icons">
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
         <div id="schedule">
             <h2 class="neonText">
                 EVENT SCHEDULE
@@ -338,8 +398,7 @@
                         <div class="timeline-date">25TH APRIL, 2022</div>
                         <div class="timeline-content">
                             <h3>Registration Starts</h3>
-                            <p>You can register youself by visiting <a class="link"
-                                    href="https://hackopitch-iitm.devfolio.co/">Devfolio</a> Platform </p>
+                            <p>You can register youself by visiting <a class="link" href="https://hackopitch-iitm.devfolio.co/">Devfolio</a> Platform </p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -373,10 +432,7 @@
                         <div class="timeline-content">
                             <h3>Hackathon Round Results</h3>
 
-                            <p>The top 10 teams will be qualified for B Plan Pitching Round at IIT Madras Campus 0n 22nd
-                                May 2022 during <a
-                                    href="https://sites.google.com/student.onlinedegree.iitm.ac.in/paradox22"
-                                    class="link">IITM Paradox'22</a></p>
+                            <p>The top 10 teams will be qualified for B Plan Pitching Round at IIT Madras Campus 0n 22nd May 2022 during <a href="https://sites.google.com/student.onlinedegree.iitm.ac.in/paradox22" class="link">IITM Paradox'22</a></p>
 
                         </div>
                     </div>
@@ -386,11 +442,7 @@
                         <div class="timeline-content">
                             <h3>B-Plan Round - IITM Campus</h3>
 
-                            <p>The top 10 shortlisted teams after the online Hackathon round would present a business
-                                perspective/plan
-                                for their products. Jury members from IIT Madras
-                                & Industry Experts will be there for the final evaluation. The top 3 teams
-
+                            <p>The top 10 shortlisted teams after the online Hackathon round would present a business perspective/plan for their products. Jury members from IIT Madras & Industry Experts will be there for the final evaluation. The top 3 teams
                                 will be announced as the winner.</p>
                         </div>
                     </div>
@@ -402,8 +454,7 @@
             <h2 class="neonText">Platform Partners</h2>
             <div class="highlights">
                 <a href="https://devfolio.co/"><img class="img" src="img/Devfolio_Logo-White.svg" alt="Devfolio"></a>
-                <a href="https://polygon.technology/"><img class="img" src="img/Polygon_Logo-White.png"
-                        alt="Polygon"></a>
+                <a href="https://polygon.technology/"><img class="img" src="img/Polygon_Logo-White.png" alt="Polygon"></a>
                 <a href="https://tezos.com/"><img class="img" src="img/Tezos_Logo-White.png" alt="Tezos"></a>
                 <a href="https://filecoin.io/"><img class="img" src="img/Filecoin_Logo_White.png" alt="Filecoin"></a>
                 <a href="https://celo.org/"><img id="celo" class="img" src="img/Celo_Logo_White.png" alt="Celo"></a>
@@ -426,8 +477,7 @@
             <button class="accordion">What If I don't have a team?</button>
             <div class="panel">
 
-                <p>Don't worry, we've got your back! We have a networking session and you can find your future team
-                    mates in our <a class="link" href="https://telegram.me/+ceiUqANHQL4wYzU9">Telegram group</a>.</p>
+                <p>Don't worry, we've got your back! We have a networking session and you can find your future team mates in our <a class="link" href="https://telegram.me/+ceiUqANHQL4wYzU9">Telegram group</a>.</p>
 
             </div>
 
@@ -449,12 +499,8 @@
             <button class="accordion">What if I don't know how to code?</button>
             <div class="panel">
 
-                <p>That is not a problem! A great way to learn how to code is by attending a hackathon. You never know
-                    what new skill you might pick up! You can also ask specific questions to our mentors and in the
-                    <a class="link" href="https://telegram.me/+ceiUqANHQL4wYzU9">Telegram group</a>, where people are
-                    there
-                    to help. Plus we have planned numerous workshops and talks for you guys to make the learning process
-                    better.
+                <p>That is not a problem! A great way to learn how to code is by attending a hackathon. You never know what new skill you might pick up! You can also ask specific questions to our mentors and in the
+                    <a class="link" href="https://telegram.me/+ceiUqANHQL4wYzU9">Telegram group</a>, where people are there to help. Plus we have planned numerous workshops and talks for you guys to make the learning process better.
 
                 </p>
             </div>
@@ -474,9 +520,7 @@
             <button class="accordion">What's in it for me?</button>
             <div class="panel">
 
-                <p>Cash Prizes for winners, Swags for top 10 teams, certificates and much much much more...Our website
-                    manager couldn't fit it
-                    in! Phew!</p>
+                <p>Cash Prizes for winners, Swags for top 10 teams, certificates and much much much more...Our website manager couldn't fit it in! Phew!</p>
 
             </div>
         </div>
@@ -598,73 +642,73 @@
             </div>
             <br> <br>
         </footer>
+    </div>
 
-        <script src="./js/nav.js"></script>
-        <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-        <script>
+    <script src="./js/nav.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-
-            VANTA.RINGS({
-                el: "#halo",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: true,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                backgroundColor: 0x0,
-                color: 0x341d7d
-            })
-
+        VANTA.RINGS({
+            el: "#halo",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0,
+            color: 0x341d7d
+        })
 
 
-            // VANTA.NET({
-            //     el: "#content",
-            //     mouseControls: true,
-            //     touchControls: true,
-            //     gyroControls: false,
-            //     minHeight: 200.00,
-            //     minWidth: 200.00,
-            //     scale: 1.00,
-            //     scaleMobile: 1.00,
-            //     color: 0x77ff3f,
-            //     backgroundColor: 0x0,
-            //     points: 13.00,
-            //     maxDistance: 10.00,
-            //     spacing: 18.00
-            // })
 
-            // VANTA.NET({
-            //     el: "#schedule",
-            //     mouseControls: true,
-            //     touchControls: true,
-            //     gyroControls: false,
-            //     minHeight: 200.00,
-            //     minWidth: 200.00,
-            //     scale: 1.00,
-            //     scaleMobile: 1.00,
-            //     color: 0x77ff3f,
-            //     backgroundColor: 0x0,
-            //     points: 13.00,
-            //     maxDistance: 10.00,
-            //     spacing: 18.00
-            // })
-        </script>
+        // VANTA.NET({
+        //     el: "#content",
+        //     mouseControls: true,
+        //     touchControls: true,
+        //     gyroControls: false,
+        //     minHeight: 200.00,
+        //     minWidth: 200.00,
+        //     scale: 1.00,
+        //     scaleMobile: 1.00,
+        //     color: 0x77ff3f,
+        //     backgroundColor: 0x0,
+        //     points: 13.00,
+        //     maxDistance: 10.00,
+        //     spacing: 18.00
+        // })
+
+        // VANTA.NET({
+        //     el: "#schedule",
+        //     mouseControls: true,
+        //     touchControls: true,
+        //     gyroControls: false,
+        //     minHeight: 200.00,
+        //     minWidth: 200.00,
+        //     scale: 1.00,
+        //     scaleMobile: 1.00,
+        //     color: 0x77ff3f,
+        //     backgroundColor: 0x0,
+        //     points: 13.00,
+        //     maxDistance: 10.00,
+        //     spacing: 18.00
+        // })
+    </script>
 </body>
 
 </html>
