@@ -401,6 +401,15 @@ footer h3 {
     margin-right: 18px;
 }
 
+.judge-card p {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-style: italic;
+    padding-top: 8px;
+    color: turquoise;
+    text-shadow: 0 0 4px white, 0 0 30px teal, 0 0 60px teal;
+}
+
 .judge-card img {
     border-radius: 50%;
     max-width: 240px;
