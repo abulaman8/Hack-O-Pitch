@@ -435,6 +435,15 @@ footer h3 {
     margin-right: 15px;
 }
 
+.mentor-card p {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-style: italic;
+    padding-top: 8px;
+    color: turquoise;
+    text-shadow: 0 0 4px white, 0 0 30px teal, 0 0 60px teal;
+}
+
 .mentor-card img {
     border-radius: 50%;
     max-width: 210px;
