@@ -155,6 +155,7 @@ li span {
 .highlights {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
     margin: 0px auto;
@@ -465,3 +466,128 @@ footer h3 {
     margin-right: 15px;
     border-radius: 0%;
 }
+
+.testimonial-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+}
+
+.testimonial-content {
+    background-color: #2f363e;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 10px 10px;
+}
+
+.testimonial-content h3 {
+    font-size: 20px;
+    color: pink;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.testimonial-content p {
+    color: #c8c8c8;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin: 3rem;
+}
+
+.gallery-element {
+    /* background-color: deepPink; */
+    background-image: url('https://picsum.photos/260/145');
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #fff;
+    aspect-ratio: 9/5
+}
+
+.champions {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 90vw;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.champion-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.champ-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* min-width: 480px;
+    min-height: 300px; */
+}
+
+.champ-content {
+    width: 50%;
+    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.champ-content h3 {
+    font-size: 20px;
+    color: pink;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.champ-content p {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.champ-link {
+    text-decoration: none;
+    color: #080b00;
+    background-color: pink;
+    padding: 1rem;
+    border-radius: 50px;
+    width: max-content;
+    margin: 10px auto
+}
+
+.champ-link:hover {
+    text-decoration: none;
+    background-color: deeppink;
+    color: #080b00;
+}
+
+.two-carousels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.carousel-item img {
+    aspect-ratio: 9/5;
+}
+
+
+/* * {
+    outline: limegreen 1px solid;
+} */
