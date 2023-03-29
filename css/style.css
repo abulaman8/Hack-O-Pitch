@@ -535,9 +535,17 @@ footer h3 {
 .champ-img {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     /* min-width: 480px;
     min-height: 300px; */
+}
+
+.champ-img img {
+    max-width: 600px;
+    /* height: 335px; */
+    margin: auto;
+    /* object-fit: fill; */
+    /* aspect-ratio: 9/5; */
 }
 
 .champ-content {
