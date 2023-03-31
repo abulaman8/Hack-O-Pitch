@@ -473,29 +473,42 @@ footer h3 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 25px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .testimonial-content {
     background-color: #2f363e;
-    padding: 30px;
+    padding: 2rem;
     border-radius: 5px;
-    max-width: 300px;
-    margin: 10px 10px;
+    max-width: 450px;
+    height: 560px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .testimonial-content h3 {
     font-size: 20px;
     color: pink;
-    margin: 0 0 10px;
+    /* margin: 0 0 10px; */
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .testimonial-content p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: #c8c8c8;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .gallery-container {
